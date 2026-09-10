@@ -12,8 +12,7 @@ main {
   padding: 30px;
 }
 
-.repository-card {
-  margin-top: 30px;
+.card {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -23,10 +22,4 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-}
-
-.code-health-card {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
 }

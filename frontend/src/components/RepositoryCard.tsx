@@ -1,6 +1,6 @@
 function RepositoryCard() {
   return (
-    <section className="repository-card">
+    <section className="card">
       <h3>Repository Overview</h3>
 
       <p>Repository: No repository connected</p>

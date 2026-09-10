@@ -1,7 +1,14 @@
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
-import Dashboard from './components/Dashboard'
+import Dashboard from './pages/Dashboard'
+import Repository from './pages/Repository'
+import Chat from './pages/Chat'
+import Architecture from './pages/Architecture'
+import Security from './pages/Security'
+import Testing from './pages/Testing'
 import './App.css'
+
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
@@ -10,7 +17,15 @@ function App() {
 
       <div className="content">
         <Sidebar />
-        <Dashboard />
+
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/repository" element={<Repository />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/architecture" element={<Architecture />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/testing" element={<Testing />} />
+        </Routes>
       </div>
     </div>
   )

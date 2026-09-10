@@ -1,6 +1,6 @@
 function CodeHealthCard() {
   return (
-    <section className="code-health-card">
+    <section className="card">
       <h3>Code Health</h3>
 
       <p>Quality Score: --</p>
