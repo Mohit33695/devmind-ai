@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Portal</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f1f5f9;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #1e293b;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 600;
+    }
+
+    /* GRID */
+    .container {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* CARD */
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #1e293b;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #3b82f6;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">🏢 Employee Portal</div>
+  <div>Welcome, User</div>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h3>My Profile</h3>
+    <p>Name: John Doe</p>
+    <p>Role: Software Engineer</p>
+    <p>Department: IT</p>
+  </div>
+
+  <div class="card">
+    <h3>Salary Details</h3>
+    <p>Monthly Salary: $5000</p>
+    <p>Status: Credited</p>
+  </div>
+
+  <div class="card">
+    <h3>Company Documents</h3>
+    <p>Access internal documents</p>
+    <a href="fake-db.html" class="btn">View Records</a>
+  </div>
+
+  <div class="card">
+    <h3>System Files</h3>
+    <p>Internal server data</p>
+    <a href="server-files.html" class="btn">Open Files</a>
+  </div>
+
+  <div class="card">
+    <h3>Notifications</h3>
+    <p>✔ Meeting at 3 PM</p>
+    <p>✔ Salary credited</p>
+  </div>
+
+</div>
+
+</body>
+</html>
